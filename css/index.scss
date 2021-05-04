@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    z-index: 5;
+    transition: 200ms all ease;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#top-divider {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-heading {
+    color: white;
+    font-weight: normal;
+    font-family: "Squada One", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: calc(100% + 4vw);
+}
+.card {
+    position: relative;
+    background: #e5e5e5;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 0px 13px 13px 0px;
+    overflow: hidden;
+}
+
+article {
+    padding: 1.2rem;
+    margin-top: 4vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    background-color: #1b2c4b;
+    width: 100%;
+    min-height: 100vh;
+
+    header {
+        display: flex;
+        justify-content: center;
+        img#logotyp {
+            width: 80%;
+            max-width: 550px;
+            z-index: 1;
+            margin-top: 2rem;
+        }
+    }
+    .aboutme {
+        align-items: center;
+        .info-section {
+            background: linear-gradient(
+                180deg,
+                #50029d 0%,
+                rgba(80, 2, 157, 0) 151.59%
+            );
+            display: inline-flex;
+
+            min-height: 160px;
+            width: 100%;
+
+            img {
+                min-width: 130px;
+                max-width: 30%;
+                object-fit: cover;
+            }
+
+            .info {
+                color: white;
+                font-weight: bold;
+                padding: 4vw;
+
+                font-size: calc(10px + 2vw);
+                .links {
+                    margin-top: 2rem;
+                }
+
+                a {
+                    color: #ffc107;
+                    font-size: 70%;
+                }
+            }
+        }
+
+        .card-stack {
+            position: relative;
+            margin-top: 1rem;
+            max-width: 700px;
+        }
+
+        .card {
+            &.additional-card {
+                transition: 300ms all ease;
+                position: absolute;
+            }
+            &.additional-card:nth-child(2) {
+                transform: translateY(-95%);
+                z-index: 2;
+            }
+            &.additional-card:nth-child(3) {
+                z-index: 1;
+                transform: translateY(-90%);
+            }
+        }
+
+        .description {
+            padding: 2rem;
+            line-height: 1.5rem;
+            font-size: calc(10px + 0.8vw);
+        }
+    }
+
+    .projects {
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            position: relative;
+            margin-top: 2rem;
+
+            height: 500px;
+            max-width: 320px;
+
+            color: white;
+
+            &:hover {
+                .poster {
+                    filter: blur(2px);
+                }
+                .info {
+                    opacity: 1;
+                }
+                .touch-icon {
+                    display: none;
+                }
+            }
+
+            .poster {
+                .touch-icon {
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 3rem;
+                }
+                .poster-img {
+                    display: block;
+                    height: 500px;
+                    width: 100%;
+
+                    object-fit: cover;
+                }
+            }
+            .info {
+                transition: 200ms all ease-in-out;
+                position: absolute;
+                opacity: 0;
+                background: rgba(0, 0, 0, 0.65);
+                top: 0px;
+                width: 100%;
+                height: 100%;
+
+                font-weight: bold;
+
+                padding: 2rem;
+
+                line-height: 150%;
+
+                h3 {
+                    margin-top: 1rem;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .github {
+                    margin-top: 1rem;
+                    color: #ffc107;
+                }
+
+                .description {
+                    margin-top: 4rem;
+
+                    letter-spacing: 1px;
+
+                    font-size: 1rem;
+                    line-height: 150%;
+                }
+
+                .credits {
+                    color: rgba(255, 255, 255, 0.5);
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 1rem;
+                    font-size: 80%;
+                }
+
+                img {
+                    width: 75%;
+                    position: absolute;
+
+                    object-fit: sca;
+
+                    bottom: 1rem;
+                }
+            }
+        }
+    }
+}

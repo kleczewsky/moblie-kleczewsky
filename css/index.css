@@ -1,0 +1,242 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  z-index: 5;
+  -webkit-transition: 200ms all ease;
+  transition: 200ms all ease;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#top-divider {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-heading {
+  color: white;
+  font-weight: normal;
+  font-family: "Squada One", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: calc(100% + 4vw);
+}
+
+.card {
+  position: relative;
+  background: #e5e5e5;
+  -webkit-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 0px 13px 13px 0px;
+  overflow: hidden;
+}
+
+article {
+  padding: 1.2rem;
+  margin-top: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  background-color: #1b2c4b;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main header img#logotyp {
+  width: 80%;
+  max-width: 550px;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+main .aboutme {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .aboutme .info-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(#50029d), color-stop(151.59%, rgba(80, 2, 157, 0)));
+  background: linear-gradient(180deg, #50029d 0%, rgba(80, 2, 157, 0) 151.59%);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-height: 160px;
+  width: 100%;
+}
+
+main .aboutme .info-section img {
+  min-width: 130px;
+  max-width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .aboutme .info-section .info {
+  color: white;
+  font-weight: bold;
+  padding: 4vw;
+  font-size: calc(10px + 2vw);
+}
+
+main .aboutme .info-section .info .links {
+  margin-top: 2rem;
+}
+
+main .aboutme .info-section .info a {
+  color: #ffc107;
+  font-size: 70%;
+}
+
+main .aboutme .card-stack {
+  position: relative;
+  margin-top: 1rem;
+  max-width: 700px;
+}
+
+main .aboutme .card.additional-card {
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+  position: absolute;
+}
+
+main .aboutme .card.additional-card:nth-child(2) {
+  -webkit-transform: translateY(-95%);
+          transform: translateY(-95%);
+  z-index: 2;
+}
+
+main .aboutme .card.additional-card:nth-child(3) {
+  z-index: 1;
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+}
+
+main .aboutme .description {
+  padding: 2rem;
+  line-height: 1.5rem;
+  font-size: calc(10px + 0.8vw);
+}
+
+main .projects .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .projects .card {
+  position: relative;
+  margin-top: 2rem;
+  height: 500px;
+  max-width: 320px;
+  color: white;
+}
+
+main .projects .card:hover .poster {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+main .projects .card:hover .info {
+  opacity: 1;
+}
+
+main .projects .card:hover .touch-icon {
+  display: none;
+}
+
+main .projects .card .poster .touch-icon {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 3rem;
+}
+
+main .projects .card .poster .poster-img {
+  display: block;
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .projects .card .info {
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+  position: absolute;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.65);
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  padding: 2rem;
+  line-height: 150%;
+}
+
+main .projects .card .info h3 {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main .projects .card .info .github {
+  margin-top: 1rem;
+  color: #ffc107;
+}
+
+main .projects .card .info .description {
+  margin-top: 4rem;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+main .projects .card .info .credits {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+
+main .projects .card .info img {
+  width: 75%;
+  position: absolute;
+  -o-object-fit: sca;
+     object-fit: sca;
+  bottom: 1rem;
+}

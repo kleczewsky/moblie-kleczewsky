@@ -1,64 +1,238 @@
 <!DOCTYPE html>
-<html lang="pl" xml:lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kleczewsky.com - Sky Is No Longer the Limit</title>
-
-   <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-                box-sizing: border-box;
-
-                font-size:1rem;
-            }
-
-            .backg {
-                background-image: url("./underconstruction.png ");
-                background-position: center;
-                background-size: cover;
-                height: 100vh;
-                width: 100vw;
-
-                display: flex;
-                flex-direction: column;
-
-                font-family: "Roboto";
-                color: whitesmoke;
-
-                justify-content: flex-end;
-                align-items: center;
-
-                padding:0 0 20% 0;
-            }
-
-            a {
-                text-decoration: none;
-                color: #ffc107;
-                font-weight: 600;
-                
-                letter-spacing: 1px;
-            }
-
-            .cont{
-              margin:1rem;
-              
-            }
-        </style>
-
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kleczewsky.com - Sky is no longer the limit</title>
+        <meta
+            name="description"
+            content="Jestem rozwijającym się Web Developerem, interesuje się strzelectwem oraz nowymi technologiami. W kilku sekcjach przedstawiam opis swojej osoby oraz mojej twórczości."
+        />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto&family=Squada+One&display=swap"
             rel="stylesheet"
         />
     </head>
+    <body>
+        <main>
+            <img src="./assets/svg/header-top.svg" alt="" id="top-divider" />
 
-</head>
-<body>
-     <div class="backg">
-            <h2>Tu powstaje mobilna wersja strony</h1>
-            <h2><a href="https://kleczewsky.com" style="font-family: 'Squada One';">kleczewsky.com</a></h2>
-            <p class="cont">Kontakt: <a href="mailto:ekkleczewski@gmail.com" >ekkleczewski@gmail.com</a> </p>
-        </div>
-</body>
+            <header>
+                <img
+                    src="./assets/svg/logotyp.svg"
+                    alt="kleczewsky sky is no longer the limit"
+                    id="logotyp"
+                />
+            </header>
+
+            <article class="aboutme">
+                <h1 class="section-heading">O MNIE</h1>
+                <div class="card-stack">
+                    <div class="card main-card">
+                        <div class="info-section">
+                            <img
+                                src="./assets/img/mugshot.jpg"
+                                alt="moje zdjęcie"
+                            />
+                            <div class="info">
+                                <p>Eryk<br />Kleczewski</p>
+                                <div class="links">
+                                    <a href="mailto:ekkleczewski@gmail.com"
+                                        >ekkleczewski@gmail.com</a
+                                    ><br />
+                                    <a href="https://github.com/kleczewsky"
+                                        >github.com/kleczewsky</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="description">
+                                Cześć, jestem młodym adeptem sztuki
+                                programowania, który posłał pierwsze koty za
+                                płoty. Swoją przygodę zacząłem od C++ i
+                                modyfikacji gier w ich środowisku runtime
+                                (operacje na pamięci). Było to dla mnie
+                                katalizatorem pasji do kodowania. Nauczyłem się
+                                wtedy toczyć epickie bitwy z bugami oraz szybko
+                                przegrupowywać się po porażkach. Była to też
+                                świetna okazja, aby zapoznać się z technikami
+                                inżynierii wstecznej programów(gier).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card additional-card">
+                        <p class="description">
+                            Po tym mój kompas poprowadził mnie w stronę
+                            cybersecurity, dokładniej bezpieczeństwa w sieciach
+                            lokalnych. Poznałem wtedy różne techniki ataków,
+                            które można było w tamtym czasie skutecznie
+                            przeprowadzać na sieci i ich użytkownikach.
+                            Rozwinąłem wtedy także swoje zrozumienie środowiska
+                            LAN.
+                        </p>
+                    </div>
+                    <div class="card additional-card">
+                        <p class="description">
+                            W technikum zaczęło się moje zainteresowanie
+                            aplikacjami internetowymi, stronami www. Tutaj
+                            rozpocząłem swoją przygodę z front-endem i kierunek
+                            swojej kariery przestawiłem na programowanie. Nie
+                            wykluczam możliwości zmiany swojej specjalizacji na
+                            zaplecze, bądź na inną dziedzinę programowania.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="projects">
+                <h1 class="section-heading">PROJEKTY</h1>
+                <div class="projects-container">
+                    <div class="card">
+                        <div class="poster">
+                            <img
+                                class="poster-img"
+                                src="./assets/projects/rickAndMorty.jpg"
+                                alt="rick and morty character browser"
+                            />
+                            <img
+                                class="touch-icon"
+                                src="./assets/svg/touch.svg"
+                                alt="dotknij"
+                            />
+                        </div>
+                        <div class="info">
+                            <h2>Rick and Morty Browser</h2>
+                            <h3>ReactJS</h3>
+                            <p class="github">
+                                <a href="https://github.com">Github</a>
+                            </p>
+                            <p class="description">
+                                Przeglądarka postaci z serialu Rick and Morty.
+                                Można w niej znaleźć postacie, które wystąpiły w
+                                serialu oraz poznać ich genezę i status.
+                            </p>
+                            <p class="credits">
+                                APP Eryk Kleczewski, API Axel Fuhrmann
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="poster">
+                            <img
+                                class="poster-img"
+                                src="./assets/projects/webape.png"
+                                alt="strona firmy webape"
+                            />
+                            <img
+                                class="touch-icon"
+                                src="./assets/svg/touch.svg"
+                                alt="dotknij"
+                            />
+                        </div>
+                        <div class="info">
+                            <h2>Strona WebApe</h2>
+                            <h3>Javascript, Three.js</h3>
+                            <p class="github">
+                                <a href="https://github.com">Github</a>
+                            </p>
+                            <p class="description">
+                                Strona firmy WebApe, motywem przewodnim został
+                                kosmos. Modele planet zostały zaimplementowane
+                                za pomocą Three.js.
+                            </p>
+                            <img
+                                src="./assets/projects/webape-logo.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="poster">
+                            <img
+                                class="poster-img"
+                                src="./assets/projects/GraJS.jpg"
+                                alt="przegladarkowa gra"
+                            />
+                            <img
+                                class="touch-icon"
+                                src="./assets/svg/touch.svg"
+                                alt="dotknij"
+                            />
+                        </div>
+                        <div class="info">
+                            <h2>GraJS</h2>
+                            <h3>Javascript, Canvas</h3>
+                            <p class="github">
+                                <a href="https://github.com">Github</a>
+                            </p>
+                            <p class="description">
+                                Niewielka gra, w której gracz wciela się w
+                                pilota statku kosmicznego. Jego zadaniem jest
+                                zniszczyć jak najwięcej wrogich statków i samemu
+                                przy okazji nie zostać zestrzelonym.
+                            </p>
+                            <img style="max-height: 130px; " src="./assets/projects/statki.png" alt="statki z gry" />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="poster">
+                            <img
+                                class="poster-img"
+                                src="./assets/projects/jsDoodles.png"
+                                alt="przegladarkowa gra"
+                            />
+                            <img
+                                class="touch-icon"
+                                src="./assets/svg/touch.svg"
+                                alt="dotknij"
+                            />
+                        </div>
+                        <div class="info">
+                            <h2>Js Doodles</h2>
+                            <h3>Javascript, ReactJS</h3>
+                            <p class="github">
+                                <a href="https://github.com">Github</a>
+                            </p>
+                            <p class="description">
+                               Strona agregująca moje mniejsze projekty w Javascript
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="poster">
+                            <img
+                                class="poster-img"
+                                src="./assets/projects/galeria.jpg"
+                                alt="przegladarkowa gra"
+                            />
+                            <img
+                                class="touch-icon"
+                                src="./assets/svg/touch.svg"
+                                alt="dotknij"
+                            />
+                        </div>
+                        <div class="info">
+                            <h2>Galeria</h2>
+                            <h3>HTML, SCSS</h3>
+                            <p class="github">
+                                <a href="https://github.com">Github</a>
+                            </p>
+                            <p class="description">
+                                Prosta responsywna galeria, z autorskimi zdjęciami. Wykonana za pomocą Grid`a.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+                  
+            </article>
+        </main>
+    </body>
+
+    <script src="./scripts/index.js"></script>
 </html>
