@@ -2,7 +2,6 @@ const cardStack = document.getElementsByClassName("card-stack")[0];
 const addtionalCards = document.getElementsByClassName("additional-card");
 
 let additionalCardsHeight = () => {
-    console.log(addtionalCards);
     let sum = 0;
 
     for (const card of addtionalCards) {
